@@ -17,18 +17,24 @@ It's still very common not to include any heavy libraries into a JavaScript proj
 Include the minified script in your HTML, this will expose the function `serialize()`:
 ```html
 <script src="https://rawgit.com/lucakiebel/serialize.js/s/serialize.min.js"></script>
-<form>
-	<input type="text" name="ID">
-	<input type="text" name="Name"> <br>
-	<button type="submit">Submit</button>
+<form id="test">
+  <input type="text" name="some" value="Random">
+  <input type="text" name="field" value="Values"> 
+  <input type="number" name="names" value="123565">
+  <input type="password" name="andAPassword" value="andMore">
+  <br><br>
+  <button type="button" id="serialize">Serialize!</button>
 </form>
-<script> 
-  document.forms[0].onsubmit = () => { 
-    console.log(serialize(document.forms[0])); 
-    return false; 
-  } 
+<hr>
+<p id="s">Result: </p>
+<script>
+document.getElementById("serialize").onclick = () => {
+  document.getElementById("s").innerHTML += (serialize(document.forms[0])); 
+}
 </script>
 ```
+See it in action at [CodePen](https://codepen.io/klequex/pen/VxzxwN?editors=1010#0)
+
 
 ### USAGE
 [u]: #usage 'Product usage'
