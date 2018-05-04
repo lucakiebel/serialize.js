@@ -2,7 +2,7 @@ function serialize(form, spaceToPlus = false) {
   if (!form || form.nodeName !== "FORM") {
     return;
   }
-  let i, j, q = [];
+  let i, j, k, q = [];
   for (i = form.elements.length - 1; i >= 0; i = i - 1) {
     if (form.elements[i].name === "") {
       continue;
