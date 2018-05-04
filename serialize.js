@@ -59,7 +59,9 @@ function serialize(form, spaceToPlus = false) {
     }
   }
   if (spaceToPlus === true) {
-    q = q.map(e => e.replace("%20", "+"));
+    for(k=0; k<q.length; k++) {
+      q[k] = q[k].replace("%20", "+");
+    }
   }
   return q.join("&");
 }
