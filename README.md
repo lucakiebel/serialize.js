@@ -33,7 +33,7 @@ document.getElementById("serialize").onclick = () => {
 }
 </script>
 ```
-See it in action at [CodePen](https://codepen.io/klequex/pen/VxzxwN?editors=1010#0)
+See it in action at [CodePen](https://codepen.io/lucakiebel/pen/VxzxwN?editors=1010)
 
 
 ### USAGE
@@ -41,7 +41,7 @@ See it in action at [CodePen](https://codepen.io/klequex/pen/VxzxwN?editors=1010
 
 In most cases, forms need to be serialized to send their data to an API endpoint. Using the `fetch()` API, this is how you would go about accomplishing this:
 ```html
-<script src="https://rawgit.com/lucakiebel/serialize.js/s/serialize.min.js"></script>
+<script src="https://git.sk-cdn.net/lucakiebel/serialize.js/s/serialize.min.js"></script>
 <form>
 	<input type="text" name="ID">
 	<input type="text" name="Name"> <br>
