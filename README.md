@@ -14,9 +14,9 @@ It's still very common not to include any heavy libraries into a JavaScript proj
 ### INSTALLATION
 [i]: #installation 'Installation guide' 
 
-Include the [minified script](https://rawgit.com/lucakiebel/serialize.js/s/serialize.min.js) in your HTML, this will expose the function `serialize()`:
+Include the [minified script](https://git.sk-cdn.net/lucakiebel/serialize.js/s/serialize.min.js) in your HTML, this will expose the function `serialize()`:
 ```html
-<script src="https://rawgit.com/lucakiebel/serialize.js/s/serialize.min.js"></script>
+<script src="https://git.sk-cdn.net/lucakiebel/serialize.js/s/serialize.min.js"></script>
 <form id="test">
   <input type="text" name="some" value="Random">
   <input type="text" name="field" value="Values"> 
